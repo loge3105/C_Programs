@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+typedef struct{
+ 
+    char name[30];
+    int age;
+    int phonenumber;
+    int salary;
+ 
+} Employee;
+ 
+int main()
+{
+    int i, n=3;
+ 
+    Employee employees[n];
+ 
+ 
+    printf("Enter Employee Details \n \n");
+    for(i=0; i<n; i++){
+ 
+        printf("Employee %d:- \n",i+1);
+        
+        printf("Name: ");
+        scanf("%s",employees[i].name);
+        
+        printf("Age: ");
+        scanf("%d",&employees[i].age);
+          printf("phonenumber: ");
+        scanf("%d",&employees[i].phonenumber);
+        
+        printf("Salary: ");
+        scanf("%d",&employees[i].salary);
+ 
+        printf("\n");
+    }
+ 
+ 
+ 
+    printf("-------------- Employees Details ---------------\n");
+     printf("Name\t  id\t   phonenumber\t   salary\t ");
+    for(i=0; i<n; i++){
+ 
+       
+        printf("\n%s\t    %d\t   %d\t      %d\t  \n",employees[i].name,employees[i].age,employees[i].phonenumber,employees[i].salary);
+ 
+   
+    }
+ 
+    return 0;
+ 
+}
+
