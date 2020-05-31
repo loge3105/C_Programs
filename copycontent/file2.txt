@@ -1,0 +1,1 @@
+//content will be copied from file1 and written in this file
